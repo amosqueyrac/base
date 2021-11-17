@@ -1,17 +1,17 @@
 #include<iostream>
 using namespace std;
 
-void hanoi(int, char, char, char);
+void hanoi(int, string, string, string);
 
 int main(){
     int n;
     cout<<"ingrese la cantidad de discos para el juego: ";
     cin>>n;
-    hanoi(n,'O','A','D');
+    hanoi(n,"origen","auxiliar","destino");
     return 0;
 }
 
-void hanoi(int n, char o, char a, char d){
+void hanoi(int n, string o, string a, string d){
     if(n==1){
         cout<<"Mover disco del "<<o<<" al "<<d<<endl;
     } else {
